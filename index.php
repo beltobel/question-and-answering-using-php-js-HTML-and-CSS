@@ -12,6 +12,7 @@
 
     <?php
     echo date("Y-m-d");
+    echo "What is your name_______";
     ?>
 </body>
 </html>
