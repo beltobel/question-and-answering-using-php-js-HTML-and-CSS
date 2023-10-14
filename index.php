@@ -10,7 +10,7 @@
     echo date("Y-m-d");
    
     ?>
-  <h1>Contact Us</h1>
+  <h1>Student Registration</h1>
   <!-- contact_us.php -->
   <form action="insert_data.php" method="POST">
     <label for="first_name">First Name:</label>
