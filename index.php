@@ -1,6 +1,4 @@
 
-  
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +11,8 @@
    
     ?>
   <h1>Contact Us</h1>
-  
-  <form action="contact_us.php" method="POST">
+  <!-- contact_us.php -->
+  <form action="insert_data.php" method="POST">
     <label for="first_name">First Name:</label>
     <input type="text" id="first_name" name="first_name" required><br><br>
     
@@ -24,23 +22,17 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
     
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name ="submit">
+    
   </form>
-
+  <form action="fetch_data.php" method="POST">
+  <input type="submit" value="Display" name ="display">
+  </form>
   <!-- <h1>global variables </h1> -->
 
   
 <!-- supper global variables example  -->
 
-<?php  
-
-// $a = "alex";
-// $b =  2;
-
-// print "<pre>";
-// print_r($GLOBALS);
-
-?>
 <br>
 
 <!-- <h1> server variable in php</h1> -->
@@ -103,6 +95,48 @@
 ?> 
 
 
+<?php  
+
+//writing to file using PHP
+// ************************** 
+
+// if(isset($_POST["submit"]))
+// {
+ 
+//*************************************** 
+//open the file you want to write your data on and write it
+// $handle = fopen('newphpfile.txt', 'a'); //open file in append mode
+// if(!empty($fname))
+// {
+//   fwrite($handle, $fname."\n");
+// }
+
+// if(!empty($lname))
+// {
+//   fwrite($handle, $lname."\n");
+// }
+
+// if(!empty($message))
+// {
+//   fwrite($handle, $message."\n");
+// }
+
+// fclose($handle);
+
+// echo "successfully saved";
+
+// }
+
+
+// $a = "alex";
+// $b =  2;
+
+// print "<pre>";
+// print_r($GLOBALS);
+
+
+
+?>
 
 
 <br>
