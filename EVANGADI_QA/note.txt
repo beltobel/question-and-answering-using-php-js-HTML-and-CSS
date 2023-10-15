@@ -1,0 +1,15 @@
+road map note
+**************
+
+
+DB users 
+---------
+
+    -u_id
+    -fname
+    -lname
+    -password
+    -username 
+    -email
+    -jionedDate
+    -uHash

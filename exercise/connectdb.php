@@ -23,6 +23,7 @@ $link = mysqli_connect("localhost", "root", "", "php_evangadi");
 // {
 // echo "table created";
 // }
+  
 // else
 // {
 //     echo "error";
