@@ -13,3 +13,31 @@ DB users
     -email
     -jionedDate
     -uHash
+
+
+way to tag on questions 
+
+DB topics 
+*********
+-tid
+-topicName
+
+
+DB question
+***********
+-q_id 
+-t_id
+-u_id
+-question
+-q_detail
+-askedDate
+
+DB answer
+-a_id
+-q_id 
+-t_id
+-u_id
+-answer
+-a_detail
+-answerDate
+
