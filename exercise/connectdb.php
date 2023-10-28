@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect("localhost", "root", "", "php_evangadi");
+$link = mysqli_connect("localhost", "root", "password", "dbname");
 
 // if($link ==false)
 // {
