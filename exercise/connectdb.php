@@ -14,7 +14,7 @@ $link = mysqli_connect("localhost", "root", "password", "dbname");
 
 // // Create the table
 // $sql = "CREATE TABLE contact_table (
-//     user_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+//     user_id INT(11) AU1TO_INCREMENT PRIMARY KEY,
 //     first_name VARCHAR(50) NOT NULL,
 //     last_name VARCHAR(50) NOT NULL,
 //     message TEXT

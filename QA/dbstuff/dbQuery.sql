@@ -47,3 +47,5 @@ CREATE TABLE answer (
     FOREIGN KEY (q_id) REFERENCES questions(q_id),
     FOREIGN KEY (u_id) REFERENCES users(u_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--create all tables using install.php code
