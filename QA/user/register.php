@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
   <style>
     body {
-      background-color: blue;
+      background: linear-gradient(to bottom,black , #ff0044);
       margin-top: 60px;
     }
 
@@ -15,8 +15,10 @@
       padding: 20px;
       border: 1px solid #ccc;
       border-radius: 10px;
-      background-color: #ffffff;
+      background: linear-gradient(to bottom,blue , #ffffff);
+      /* background-color: #ffffff; */
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      color: #333333;
     }
 
     h2 {
@@ -24,6 +26,7 @@
       color: #333333;
       margin-bottom: 30px;
     }
+    
 
     .form-label {
       font-weight: 600;
@@ -34,6 +37,10 @@
       border: 1px solid #ced4da;
       border-radius: 5px;
       color: #495057;
+      padding: 7px;
+     
+      width: 80%;
+      display: flex;
     }
 
     .form-control:focus {
@@ -46,7 +53,7 @@
     .error-message {
       color: #dc3545;
       font-size: 14px;
-      margin-top: 5px;
+      margin: 5px;
     }
 
     .success-message {
@@ -82,7 +89,7 @@
     <h2>Registration Form</h2>
     <form id="registrationForm" action  ="registrationHandler.php" method ="post">
       <div class="mb-3">
-        <label for="firstName" class="form-label">First Name:</label>
+        <label for="firstName" class="form-label">First Name:</label> 
         <input type="text" class="form-control" id="firstName" name="firstName" >
         <span id="firstNameError" class="error-message"></span>
       </div>
@@ -93,7 +100,7 @@
         <span id="lastNameError" class="error-message"></span>
       </div>
       
-      <div class="mb-3">
+      <div class="mb-3 " >
         <label for="email" class="form-label">Email:</label>
         <input type="email" class="form-control" id="email" name="email" >
         <span id="emailError" class="error-message"></span>
@@ -120,8 +127,8 @@
   </div>
   
   <script>
-    document.getElementById('registrationForm').addEventListener('submit', function(e) {
-    //   e.preventDefault();
+    document.getElementById('registrationForm').addEventListener('submit', function() {
+      // e.preventDefault();
 
       // Retrieve form values
       var firstName = document.getElementById('firstName').value.trim();
@@ -171,12 +178,15 @@
         isValid = false;
       }
 
-    //   if (isValid) {
-    //     // Submit the form
-    //     // You can perform additional actions here, such as AJAX requests to handle form submission
+      // if (isValid) {
+      //   // Submit the form
+      //   // You can perform additional actions here, such as AJAX requests to handle form submission
 
-    //     document.getElementById('successMessage').textContent = 'Form submitted successfully!';
-    //   }
+      //   // document.getElementById('successMessage').textContent = 'Form submitted successfully!';
+      // // header("Location: index.html");
+      //           // exit();
+      //           alert("well  done go a head and register");
+      // }
 
     });
   </script>

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //import required functions
 
 require_once('connect.php');

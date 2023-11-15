@@ -8,7 +8,6 @@ CREATE TABLE users (
     fName VARCHAR(255) NOT NULL,
     lName VARCHAR(255) NOT NULL,
     pass VARCHAR(255) NOT NULL,
-    username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     joined_date DATE NOT NULL,
     uHash VARCHAR(255) NOT NULL
